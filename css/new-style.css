@@ -1,0 +1,241 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    height: 90vh;
+    background-image: url("../var1/IMG_1192(1).jpg");
+    background-size: cover;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.nav__item a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.content, .temata {
+    padding: 1em;
+}
+
+.theme {
+    background-color: #374B7D;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.theme--brown {
+    background-color: #301E1E;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nadpis--brown {
+    margin: 0;
+    color: #ffffff;
+}
+
+.theme__text--brown {
+    color: #ffffff;
+}
+
+.foto__about {
+    flex-grow: 1;
+    padding-left: 0.2em;
+}
+
+.theme__text--blue {
+    color: #ffffff;
+}
+
+.theme__text {
+    font-size: 1.1em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+}
+
+.gallery__item-gallery-photo {
+    width: 250px;
+    height: 200px;
+    flex-grow: 1;
+}
+
+.gallery-block {
+    background-color: #184028;
+    padding: 0.25em;
+    margin-top: 1.5em;
+}
+
+.threeof {
+    display: flex;
+    flex-direction: column;
+}
+
+.content a {
+    display: block;
+}
+
+.header__nadpis--position {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 3em;
+}
+
+.threeof {
+    background-color: #ECD1D1;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.description__threeof {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.fiveinone {
+    background-color: #FEF1E5;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    gap: 1em;
+}
+
+.h2-heading--description {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+
+.fiveinone__item_gallery-photo {
+    height: 50vh;
+    flex-grow: 1;
+}
+
+.h2-heading--fiveinone {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.header__nadpis--temata {
+    font-size: 2em;
+}
+
+.header__nadpis--best-of {
+    font-size: 2em;
+}
+
+.header__nadpis--gallery {
+    font-size: 2em;
+    color: #ffffff;
+    padding: 0.5em;
+}
+
+
+/* Pro tablet */
+@media only screen and (min-width: 900px) {
+    .theme {
+        flex-direction: row;
+    }
+    .theme__text--blue {
+        order: 1;
+        padding-right: 2em;
+        font-size: 1.5em;
+
+    }
+    .foto__bestof--blue {
+        order: 2;
+    }
+    .threeof {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2em;
+        background-color: #ECD1D1;
+        gap: 2em;   
+    }
+    .theme--brown {
+        flex-direction: row;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .theme__text--brown {
+        font-size: 1.3em;
+    }
+    .fiveinone {
+        flex-direction: row;
+    }
+    .nav {
+        background-color: rgba(255, 255, 255, 0.75);
+        list-style-type: none;
+        padding: 1em;
+        margin: 0;
+        flex-direction: row;
+        gap: 1.5em;
+    }              
+}
+
+
+/* Pro desktop */
+@media only screen and (min-width: 1300px) {
+    .h2-heading {
+        text-align: left;
+    }
+    .threeof {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2em;
+        background-color: #ECD1D1;
+        gap: 2em;   
+    }
+    .header__nadpis--position {
+        bottom: 220px;
+        right: 250px;
+        left: inherit;
+        transform: translate(0);
+    }
+}
+

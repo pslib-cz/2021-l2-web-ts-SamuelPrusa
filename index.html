@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.5/css/lightgallery.min.css" integrity="sha512-Szyqrwc8kFyWMllOpTgYCMaNNm/Kl8Fz0jJoksPZAWUqhE60VRHiLLJVcIQKi+bOMffjvrPCxtwfL+/3NPh/ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/new-style.css">
+    <title>Terénní seminář | S. Průša</title>
 </head>
 <body>
     <main>
@@ -17,79 +18,85 @@
                             <a href="#">Úvodní strana</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Best of fotografie</a>
+                            <a href="#best-of">Best of fotografie</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Žánrové fotografie</a>
+                            <a href="#temata">Žánrové fotografie</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">5 fotografií jedné scény</a>
+                            <a href="#five-one">5 fotografií jedné scény</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#">Galerie</a>
+                            <a href="#galerie">Galerie</a>
                         </li>
                     </ul>
                </nav>
-            <img src="./var1/IMG_1192.jpg">
-            <h1>Terénní seminář</h1>
+               
+            <h1 class="header__nadpis--position">Terénní seminář</h1>
         </header>
-
-        <div class="content">
+        <div class="content" id="best-of">
             <div class="content__section">
-                <h2>Best of fotografie</h2>
+                <h2 class="header__nadpis--best-of">Best of fotografie</h2>
                 <div class="theme">
-                    <p>Moje best of fotografie vznikla velice spontánně. Věděl jsem, že bude perfektní, když vyfotím přehradu s odleskem. Myslím si, že se fotka povedla.</p>
-                    <img src="./var1/IMG_8187.jpg">
+                    <a href="./var1/IMG_8187-min-min.jpg"><img class="foto__bestof--blue" src="./var2/fotka_oriznuta.jpg" alt="Forest and lake"></a>
+                    <p class="theme__text--blue">Moje best of fotografie vznikla velice spontánně. Věděl jsem, že bude perfektní, když vyfotím přehradu s odleskem. Myslím si, že se fotka povedla.</p>
                 </div>
-                <div class="theme theme--smaller theme--dark">
-                    <h3>O mně</h3>
-                    <p>Jmenuji se Samuel Průša. Občas se věnuji čtení náročných témat a problematik o světě a pomocí toho si tvořím nějaký vlastní obrázek na věci okolo sebe. Také z části pracuji jako Social Media Manager. Když nedělám ani jedno, tak sedím dlouhé hodiny za klavírem.</p>
-                    <img src="./var1/IMG_8156.jpg">
+                <div class="theme--brown">
+                    <p class="theme__text--brown">O mně => Jmenuji se Samuel Průša. Občas se věnuji čtení náročných témat a problematik o světě a pomocí toho si tvořím nějaký vlastní obrázek na věci okolo sebe. Také z části pracuji jako Social Media Manager. Když nedělám ani jedno, tak sedím dlouhé hodiny za klavírem.</p>
+                    <a href="./var1/IMG_8156(1).jpg"><img class="foto__about" src="./var2/IMG_8156.jpg" alt="Piano"></a>
                 </div>
             </div>
         </div>
         <div class="temata">
-            <h2>Žánrové fotografie</h2>
-            <p>Všechny tři žánrové fotografie vznikli úplnou náhodou a proto se k zadaným tématům perfektně hodí. Teda aspoň mi to tak připadá..</p>
+            <h2 class="header__nadpis--temata" id="temata">Žánrové fotografie</h2>
+            <p class="theme__text">Všechny tři žánrové fotografie vznikli úplnou náhodou a proto se k zadaným tématům perfektně hodí. Teda aspoň mi to tak připadá..</p>
             <div class="threeof">
-                <figure class="gallery-photo threeof__item">
-                    <img src="./var1/IMG_8276.jpg">
-                    <figcaption>Společnými silami</figcaption>
+                <figure class="gallery-photo-threeof__item">
+                    <a href="./var1/IMG_8276(1).jpg"><img src="./var2/IMG_8276.jpg" alt="Join forces"></a>
+                    <figcaption class="description__threeof">Společnými silami</figcaption>
                 </figure>
                 <figure class="threeof__item">
-                    <img src="./var1/Snapseed(4).jpg">
-                    <figcaption>Svět bez barev</figcaption>
+                    <a href="./var1/Snapseed(4)(1).jpg"><img src="./var2/Snapseed(4).jpg" alt="A world without colors"></a>
+                    <figcaption class="description__threeof">Svět bez barev</figcaption>
                 </figure>
                 <figure class="threeof__item">
-                    <img src="./var1/Snapseed(3).jpg">
-                    <figcaption>Časy minulé</figcaption>
+                    <a href="./var1/Snapseed(3)(1).jpg"><img src="./var2/Snapseed(3).jpg" alt="Times past"></a>
+                    <figcaption class="description__threeof">Časy minulé</figcaption>
                 </figure>
             </div>
-            <div class="fiveinone">
-                <h2 class="h2-heading">5 fotografií jedné scény</h2>
-                <p>Na tohle téma jsem pečlivš výbíral věc, kterou budu chtít vyfotit. Nakonec se mi zalíbil tenhle MINI Cooper.</p>
-                <figure class="fiveinone__item gallery-photo"><img src="./var1/auto_pohled.jpg"></figure>
-                <figure class="fiveinone__item gallery-photo"><img src="./var1/FullSizeRender(1).jpg"></figure>
-                <figure class="fiveinone__item gallery-photo"><img src="./var1/Snapseed(1).jpg"></figure>
-                <figure class="fiveinone__item gallery-photo"><img src="./var1/Snapseed.jpg"></figure>
-                <figure class="fiveinone__item gallery-photo"><img src="./var1/FullSizeRender.jpg"></figure>
+            <div class="fiveinone" id="five-one">
+                <h2 class="h2-heading--fiveinone">5 fotografií jedné scény</h2>
+                <p class="h2-heading--description">Na tohle téma jsem pečlivš výbíral věc, kterou budu chtít vyfotit. Nakonec se mi zalíbil tenhle MINI Cooper.</p>
+                    <figure class="fiveinone__item_gallery-photo"><a href="./var1/auto_pohled(1).jpg"><img src="./var2/Snapseed(1)-min.jpg" alt="Car first view"></a></figure>
+                    <figure class="fiveinone__item_gallery-photo"><a href="./var1/FullSizeRender(1).jpg"><img src="./var2/FullSizeRender(1).jpg" alt="Car second view"></a></figure>
+                    <figure class="fiveinone__item_gallery-photo"><a href="./var1/Snapseed(1)(1).jpg"><img src="./var2/Snapseed(1).jpg" alt="Car third view"></a></figure>
+                    <figure class="fiveinone__item_gallery-photo"><a href="./var1/Snapseed(2)(1).jpg"><img src="./var2/Snapseed.jpg" alt="Car fourth view"></a></figure>
+                    <figure class="fiveinone__item_gallery-photo"><a href="./var1/FullSizeRender(1).jpg"><img src="./var2/FullSizeRender.jpg" alt="Car fifth view"></a></figure>
             </div>
-            <div class="gallery">
-                <h2 class="h2-headnig">Galerie</h2>
-               <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8201.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8187.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8181.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8205.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8174.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8154.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8192.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8272.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8198.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8170.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_1046.jpg"></figure>
-                <figure class="gallery__item gallery-photo"><img src="./var1/IMG_8156.jpg"></figure>
-            </div>
+            <section class="gallery-block" id="galerie">
+                <h2 class="header__nadpis--gallery">Galerie</h2>
+                <div class="gallery" id="my-gallery">
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8201(1).jpg"><img src="./var2/IMG_8201.jpg" alt="Flowers"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8186(1).jpg"><img src="./var2/IMG_8187.jpg" alt="Forest and lake (second)"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8181(1).jpg"><img src="./var2/IMG_8181.jpg" alt="Photographer"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8205(1).jpg"><img src="./var2/IMG_8205.jpg" alt="Old house"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8174(1).jpg"><img src="./var2/IMG_8174.jpg" alt="Cafe"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8154(1).jpg"><img src="./var2/IMG_8154.jpg" alt="Museum"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8192(1).jpg"><img src="./var2/IMG_8192.jpg" alt="Locks"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8272(1).jpg"><img src="./var2/IMG_8272.jpg" alt="Self portrait"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8198(1).jpg"><img src="./var2/IMG_8198.jpg" alt="Traffic lights"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8170(1).jpg"><img src="./var2/IMG_8170.jpg" alt="Houses"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_1046(1).jpg"><img src="./var2/IMG_1046(1).jpg" alt="Self portrait in bush"></a></figure>
+                    <figure class="gallery__item-gallery-photo"><a href="./var1/IMG_8156(1).jpg"><img src="./var2/IMG_8156.jpg" alt="Second piano"></a></figure>
+                </div>
+            </section>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0-beta.5/lightgallery.min.js" integrity="sha512-+cRLP8t0rsqPalRf//6kfVwRVPzxvwtgLOm8XoSw+M/ND6/0aODP3WFs8m4EPtqsJ9aurqbYq4q/0u8lRJSldA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        lightGallery(document.getElementById('my-gallery'), {
+            selector: '.gallery__item-gallery-photo img',
+        })
+   </script>
 </body>
 </html>
